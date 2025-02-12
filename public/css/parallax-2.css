@@ -1,0 +1,94 @@
+.part2{
+    margin-top: 200px;
+    margin-bottom: 100px;
+}
+.parallax-2{
+    background: url('../img/parallax-2/parallax-2.png') no-repeat;
+    /*background-size: 300px 200px; */
+    width: 85%;  
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin-left: 100px;
+    
+}
+.parallax2-foreground-star{
+    display: flex; /* Flexbox kullanarak yan yana yerleştirir */  
+    gap: 0px; /* İsteğe bağlı: öğeler arasında boşluk bırakır */ 
+    width: 100%;
+    height: auto;
+    justify-content:space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+    z-index: 10;
+    margin-left: 260px;
+   
+}
+.parallax2-foreground-star i{
+    margin-top: 200px;
+    color: white;
+}
+.parallax2-foreground-text, .parallax2-foreground-userImg, .user-text{
+    display: flex; /* Flexbox kullanarak yan yana yerleştirir */  
+    gap: 0px; /* İsteğe bağlı: öğeler arasında boşluk bırakır */ 
+    width: 100%;
+    height: auto;
+    justify-content:space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+    z-index: 10; 
+}
+
+.part2 h2{
+    font-family: "Varela Round";
+    font-weight: 400;
+    font-style: bold;
+    font-size: 18px;
+    color: white;
+    z-index: 10;
+}
+
+.parallax-2 .user1, .parallax-2 .user2{
+    width: 50px; /* İstediğiniz genişlik */  
+    height: 50px; /* İstediğiniz yükseklik */  
+    border-radius: 50%; /* Yuvarlak yapmak için */  
+    object-fit: cover; /* Resmin orantılı bir şekilde kesilmesini sağlar */
+}
+
+@media (max-width: 900px) {
+    .part2{
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+    .parallax-2{
+        width: 92%;  
+        height: 250px;
+        margin-left: 10px;  
+    }
+    .parallax2-foreground-star{
+        margin-left: 75px;
+    }
+    .parallax2-foreground-star i{
+        width: 8px;
+        height: 5px;
+        margin-top: 50px;
+        
+    }
+    .parallax2-foreground-text, .parallax2-foreground-userImg, .user-text{
+        width: 100%;
+        height: auto;
+        margin-left: 10px;
+    }
+    .parallax2-foreground-text .right-text{
+        margin-right: 15px;
+    }
+    .part2 h2{
+        font-size: 11px;
+    }
+    .parallax-2 .user1, .parallax-2 .user2{
+        width: 50px;
+        height: 50px; 
+        border-radius: 50%;
+    }
+}

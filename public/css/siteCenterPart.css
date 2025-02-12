@@ -1,0 +1,51 @@
+.siteCenterPart{
+    width: 100%;  
+    height: 100px;
+    margin-top: 80px;
+}
+.siteCenterPart .wrapper{
+    width: 100%;  
+    max-width: 1366px;  
+    display: flex;  
+    justify-content: center; /* İçerikleri yatay olarak ortalar */
+}
+
+
+.categoriesText .wrapper {  
+    width: 100%;  
+    max-width: 1366px;  
+    display: flex;  
+    justify-content: center; /* İçerikleri yatay olarak ortalar */  
+}  
+
+.categoriesText h1 {  
+    font-family: "Poppins", sans-serif;  
+    font-weight: 600;  
+    font-size: 50px;  
+    color: black;  
+     /* Varsayılan dış boşluğu kaldırmak için */  
+}  
+
+.categoriesText .wrapper h2 {  
+    font-family: "Varela Round";  
+    font-weight: lighter;  
+    font-size: 16px;  
+    color: rgb(83, 83, 83);  
+    flex: 2 1 30%; /* Alanı daha fazla kaplaması için ayarlandı */  
+    max-width: 700px; /* Genişliği arttırıldı */  
+    text-align: center; /* Metni ortala */   
+    margin-top: -30px;
+}
+
+@media (max-width: 900px) {
+    .siteCenterPart{
+        margin-top: 40px;
+    }
+    .categoriesText h1 {  
+        font-size: 25px;
+    }  
+    .categoriesText .wrapper h2 {   
+        font-size: 11px;    
+        margin-top: -17px;
+    }
+}

@@ -1,0 +1,216 @@
+.topbar2-magaza {
+    flex: 12;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: #ffffff;
+    margin-top: 30px;
+    
+}  
+.topbar2-magaza .wrapper{
+    width: 100%;
+    max-height: 60px;
+    display: flex;
+    margin-bottom: 10px;
+}
+.topbar2-magaza .left-magaza {  
+    display: flex;
+    flex: 2;
+    width: 100%;
+    align-items: center;
+}  
+.topbar2-magaza .left-magaza i{
+    font-family: "Rozha One", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.topbar2-magaza .center-magaza{
+    display: flex;
+    flex: 9;
+    cursor: pointer;
+    align-items: center;    
+    justify-content:flex-end;
+    
+}
+.topbar2-magaza .center-magaza a{
+    margin-left: 35px;
+    font-family: "Varela Round";
+    font-weight: lighter;
+    font-size: 14px;
+    color: rgb(52, 52, 52);
+}
+.topbar2-magaza .center-magaza a:last-child{
+    margin-right: 15px;
+}
+
+.parallax-magaza .topbar2-magaza .wrapper .right-magaza {  
+    display: flex;  
+    flex: 1;  
+    cursor: pointer;
+    margin-left: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.topbar2-magaza .right-magaza span {  
+    margin-left: auto;
+}
+
+.topbar2-magaza .right-magaza span img {  
+    width: 20px;  
+    height: 20px;
+    margin-top: 6px;
+}
+.topbar2-magaza .right-magaza a{
+    font-family: "Varela Round";
+    font-weight: lighter;
+    font-size: 14px;
+    color: blue;
+    margin-right: 10px;
+}
+
+#basketIcon {  
+    width: 20px;  
+    height: 20px;
+    cursor: pointer;  
+}  
+
+.topbar2-magaza .wrapper{
+    opacity: 0;
+    transition: all 0.5s;
+    transform: translateY(-10px);
+}
+.topbar2-magaza .wrapper.active{
+    opacity: 1;
+    transform: translateY(0);
+
+}
+.topbar2-magaza .wrapper .center-magaza a{
+    transform: translateX(-20px);
+    opacity: 0;
+}
+
+.topbar2-magaza .wrapper.active .center-magaza a{
+    transition: all 0.3s;
+    transform: translate(0px);
+    opacity: 1;
+}
+.topbar2-magaza .wrapper.active .center-magaza a:nth-child(1){
+    transition-duration:0.2s ;
+}
+.topbar2-magaza .wrapper.active .center-magaza a:nth-child(2){
+    transition-duration:0.6s ;
+}
+.topbar2-magaza .wrapper.active .center-magaza a:nth-child(3){
+    transition-duration:0.9s ;
+}
+
+.parallax-magaza{
+    background: url('../img/magaza/butcher.png') no-repeat;
+    width: 85%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin-left: 100px;
+    
+}
+.parallax-foreground-magaza{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.parallax-foreground-magaza h1{
+    font-family: "Rozha One", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    color: white;
+    z-index: 10;
+}
+.magaza-text-area{
+    width: 100%;
+    height: auto;
+    display: flex;  
+    align-items: center;  
+    justify-content: center;  
+    margin-top: 80px;
+}
+.magaza-text{
+    width: 60%;
+    height: auto;
+}
+.magaza-text h3{
+    font-family: "Rozha One", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    text-align: center;
+    padding: 10px;
+    line-height: 2;
+}
+
+@media (max-width: 900px) {
+    
+    .topbar2-magaza .left-magaza {  
+        display: flex;
+        flex: 3;
+        width: 100%;
+        align-items: center;
+        cursor: pointer;
+    }  
+    .topbar2-magaza .left-magaza i{
+        font-size: 14px;
+    }
+    .topbar2-magaza .center-magaza{
+        display: flex;
+        flex: 6;
+        cursor: pointer;
+        align-items: center;    
+        justify-content:flex-end;
+    }
+    .topbar2-magaza .center-magaza a{
+        margin-left: 15px;
+        font-family: "Varela Round";
+        font-weight: lighter;
+        font-size: 11px;
+        color: rgb(52, 52, 52);
+    }
+    .topbar2-magaza .center-magaza a:last-child{
+        margin-right: 10px;
+    }
+    .topbar2-magaza .right-magaza {  
+        display: flex;  
+        flex: 1;  
+        cursor: pointer;
+        margin-left: 4px;
+    }
+    .parallax-magaza{
+        width: 90%;  
+        height: 300px;
+        margin-left: 10px;
+    }
+    .parallax-foreground-magaza h1{
+        font-size: 20px;
+    }
+    .magaza-text-area{ 
+        margin-top: 30px;
+    }
+    .magaza-text{
+        width: 90%;
+        height: auto;
+    }
+    .magaza-text h3{
+        font-size: 11px;
+        text-align: center;
+        padding: 10px;
+        line-height: 1.5;
+    }
+}

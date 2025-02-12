@@ -1,0 +1,210 @@
+.storeParts1  {  
+    max-width: 1366px;
+    width: 75%;
+    height: auto;  
+    margin-top: 80px;  
+    margin-left: 200px;
+    display: flex;  
+    justify-content: center; /* Elemanları yan yana yerleştirir */  
+    flex-wrap: nowrap;  
+    cursor: pointer;
+}
+.storeParts2{
+    max-width: 1366px;
+    width: 75%;
+    height: auto;  
+    margin-top: 0px;  
+    margin-left: 200px;
+    display: flex;  
+    justify-content: center; /* Elemanları yan yana yerleştirir */  
+    flex-wrap: nowrap;  
+    cursor: pointer;
+}
+
+.storeParts1 .topSideLeft {  
+    flex: 0 1 40%; /* Her bir ürün kutusu için genişlik ayarlanıyor */  
+    text-align: center; /* Metni ortalar */  
+    margin-right: 5px;
+    position: relative;
+}  
+.storeParts1 .topSideRight {  
+    flex: 0 1 50%; /* Her bir ürün kutusu için genişlik ayarlanıyor */  
+    text-align: center; /* Metni ortalar */  
+    position: relative;
+}  
+#kirmiziEt ,#beyazEt, #dryEt, #izgaralarEt {  
+    width: 100%;
+    height: 300px;
+    image-rendering: smooth;
+    filter: brightness(0.9);
+    object-fit: cover;
+}  
+.storeParts1 .topSideLeft .overlay-text-kirmizi {  
+    position: absolute; /* Resmin üstüne yerleştirmek için */  
+    top: 100%; /* Resmin üst kısmına yakın bir konum */  
+    left:5%; /* Yatayda ortalamak için */  
+    transform: translateY(-140px);
+    color: white; /* Yazı rengi */  
+    font-family: "Rozha One", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px; /* Yazı boyutu */  
+    text-align: center; /* Yazıyı ortalamak için */  
+    z-index: 10;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); /* Yazılar için gölge */ 
+    flex-wrap: nowrap;
+}
+.storeParts1 .topSideLeft .overlay-text-taze {  
+    position: absolute; /* Resmin üstüne yerleştirmek için */  
+    top: 100%; /* Resmin üst kısmına yakın bir konum */  
+    left:3%; /* Yatayda ortalamak için */  
+    transform: translateY(-70px);
+    color: white; /* Yazı rengi */  
+    font-family: "Varela Round", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 16px; /* Yazı boyutu */  
+    text-align: center; /* Yazıyı ortalamak için */  
+    z-index: 10;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); /* Yazılar için gölge */ 
+    flex-wrap: nowrap;
+}
+.storeParts1 .topSideRight .overlay-text-beyaz {  
+    position: absolute; /* Resmin üstüne yerleştirmek için */  
+    top: 100%; /* Resmin üst kısmına yakın bir konum */  
+    left:5%; /* Yatayda ortalamak için */  
+    transform: translateY(-140px);
+    color: white; /* Yazı rengi */  
+    font-family: "Rozha One", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px; /* Yazı boyutu */  
+    text-align: center; /* Yazıyı ortalamak için */  
+    z-index: 10;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); /* Yazılar için gölge */ 
+}
+.storeParts1 .topSideRight .overlay-text-lezzeti {  
+    position: absolute; /* Resmin üstüne yerleştirmek için */  
+    top: 100%; /* Resmin üst kısmına yakın bir konum */  
+    left:5%; /* Yatayda ortalamak için */  
+    transform: translateY(-70px);
+    color: white; /* Yazı rengi */  
+    font-family: "Varela Round", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 16px; /* Yazı boyutu */  
+    text-align: center; /* Yazıyı ortalamak için */   
+    z-index: 10;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); /* Yazılar için gölge */ 
+}
+
+
+.storeParts2 .bottomSideLeft {  
+    flex: 0 1 50%; /* Her bir ürün kutusu için genişlik ayarlanıyor */  
+    text-align: center; /* Metni ortalar */  
+    margin-right: 5px;
+    position: relative;
+}  
+.storeParts2 .bottomSideRight {  
+    flex: 0 1 40%; /* Her bir ürün kutusu için genişlik ayarlanıyor */  
+    text-align: center; /* Metni ortalar */ 
+    position: relative; 
+}
+.storeParts2 .bottomSideLeft .overlay-text-dry {  
+    position: absolute; /* Resmin üstüne yerleştirmek için */  
+    top: 100%; /* Resmin üst kısmına yakın bir konum */  
+    left:5%; /* Yatayda ortalamak için */  
+    transform: translateY(-140px);
+    color: white; /* Yazı rengi */  
+    font-family: "Rozha One", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px; /* Yazı boyutu */  
+    text-align: center; /* Yazıyı ortalamak için */  
+    z-index: 10;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); /* Yazılar için gölge */ 
+}
+.storeParts2 .bottomSideLeft .overlay-text-ozel {  
+    position: absolute; /* Resmin üstüne yerleştirmek için */  
+    top: 100%; /* Resmin üst kısmına yakın bir konum */  
+    left:2%; /* Yatayda ortalamak için */  
+    transform: translateY(-70px);
+    color: white; /* Yazı rengi */  
+    font-family: "Varela Round", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 16px; /* Yazı boyutu */  
+    text-align: center; /* Yazıyı ortalamak için */   
+    z-index: 10;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); /* Yazılar için gölge */ 
+}
+.storeParts2 .bottomSideRight .overlay-text-izgaralar {  
+    position: absolute; /* Resmin üstüne yerleştirmek için */  
+    top: 100%; /* Resmin üst kısmına yakın bir konum */  
+    left:6%; /* Yatayda ortalamak için */  
+    transform: translateY(-140px);
+    color: white; /* Yazı rengi */  
+    font-family: "Rozha One", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px; /* Yazı boyutu */  
+    text-align: center; /* Yazıyı ortalamak için */  
+    z-index: 10;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); /* Yazılar için gölge */ 
+}
+.storeParts2 .bottomSideRight .overlay-text-damak {  
+    position: absolute; /* Resmin üstüne yerleştirmek için */  
+    top: 100%; /* Resmin üst kısmına yakın bir konum */  
+    left:6%; /* Yatayda ortalamak için */  
+    transform: translateY(-70px);
+    color: white; /* Yazı rengi */  
+    font-family: "Varela Round", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 16px; /* Yazı boyutu */  
+    text-align: left; /* Yazıyı ortalamak için */   
+    z-index: 10;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); /* Yazılar için gölge */ 
+}
+
+@media (max-width: 900px) {
+    .storeParts1  {  
+        width: 90%;
+        height: auto;  
+        margin-top: 40px;  
+        margin-left: 10px;
+    }
+    .storeParts2{
+        width: 90%;
+        height: auto;  
+        margin-left: 10px;
+    }
+    #kirmiziEt ,#beyazEt, #dryEt, #izgaralarEt {  
+        width: 100%;
+        height: 200px;
+    }
+    .storeParts1 .topSideLeft .overlay-text-kirmizi {   
+        font-size: 20px;
+    }
+    .storeParts1 .topSideLeft .overlay-text-taze {  
+        font-size: 10px;
+    }
+    .storeParts1 .topSideRight .overlay-text-beyaz {  
+        font-size: 20px;
+    }
+    .storeParts1 .topSideRight .overlay-text-lezzeti {  
+        font-size: 10px;
+    }
+    .storeParts2 .bottomSideLeft .overlay-text-dry {  
+        font-size: 20px;
+    }
+    .storeParts2 .bottomSideLeft .overlay-text-ozel {  
+        font-size: 10px;
+    }
+    .storeParts2 .bottomSideRight .overlay-text-izgaralar {  
+        font-size: 20px; 
+    }
+    .storeParts2 .bottomSideRight .overlay-text-damak {
+        font-size: 10px;
+    }
+}

@@ -1,0 +1,36 @@
+.dogal-et{
+    display: flex; /* Flexbox kullanarak yan yana yerleştirir */  
+    gap: 0px; /* İsteğe bağlı: öğeler arasında boşluk bırakır */ 
+    width: 100%;
+    height: 60px;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    z-index: 10; 
+}
+.dogal-et h1{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: bold;
+    font-size: 50px;
+}
+.dogal-et h2{
+    font-family: "Varela Round";
+    font-weight: 300;
+    font-style: normal;
+    font-size: 16px;
+    margin-top: -30px;
+}
+
+@media (max-width: 900px) {
+    .dogal-et{
+        height: 30px;
+    }
+    .dogal-et h1{
+        font-size: 20px;
+    }
+    .dogal-et h2{
+        font-size: 11px;
+        margin-top: -17px;
+    }
+}

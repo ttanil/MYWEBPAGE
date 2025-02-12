@@ -1,0 +1,2 @@
+console.log("Ekran Genişliği: " + window.innerWidth + " piksel");  
+console.log("Ekran Yüksekliği: " + window.innerHeight + " piksel");

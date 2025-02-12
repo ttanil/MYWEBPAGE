@@ -1,0 +1,41 @@
+.bottom-visuals{
+    margin-top: 50px;
+}
+.top-visuals, .alt-visuals{
+    max-width: 1366px;
+    display: flex; /* Flexbox kullanarak yan yana yerleştirir */  
+    gap: 0px; /* İsteğe bağlı: öğeler arasında boşluk bırakır */ 
+    width: 100%;
+    height: auto;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: nowrap;
+    z-index: 10;
+    margin-left: 80px;
+}
+.top-visuals .dukkan, .alt-visuals .visual1{
+    width: 60%;
+    height: 320px;
+}
+
+.top-visuals .visual2, .alt-visuals .dukkan2{
+    width: 35%;
+    height: 320px;
+}
+@media (max-width: 900px) {
+    .bottom-visuals{
+        margin-top: 20px;
+    }
+    .top-visuals, .alt-visuals{
+        margin-left: 10px;
+    }
+    .top-visuals .dukkan, .alt-visuals .visual1{
+        width: 60%;
+        height: 180px;
+    }
+    
+    .top-visuals .visual2, .alt-visuals .dukkan2{
+        width: 35%;
+        height: 180px;
+    }
+}

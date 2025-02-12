@@ -1,0 +1,226 @@
+.hizliErisimTop, .hizliErisimBottom {  
+    max-width: 1366px;  
+    width: 100%;
+    height: auto;  
+    margin-top: 30px; 
+    margin-left: 60px;
+    margin-bottom: 10px;
+    display: flex;  
+    justify-content: space-around; /* Elemanları yan yana yerleştirir */  
+    flex-wrap: wrap; /* Taşma durumunda alt satıra geçmesini sağlar */  
+    cursor: pointer;  
+}  
+
+.hizliErisimTop div,.hizliErisimBottom div {  
+    flex: 0 1 23%; /* Her bir ürün kutusu için genişlik ayarlanıyor */  
+    text-align: center; /* Metni ortalar */  
+}  
+
+.hizliErisimTop img,.hizliErisimBottom img {  
+    width: 100%; /* Resim genişliği alanı kaplasın */  
+    height: 300px;  
+    object-fit: cover; /* Resmi karıştırarak alanı doldurur */  
+}  
+.hizliErisimTop .price-container,.hizliErisimBottom .price-container{ 
+    display: flex; /* Flexbox kullanarak yan yana yerleştirir */  
+    gap: 0px; /* İsteğe bağlı: öğeler arasında boşluk bırakır */ 
+    width: 100%;
+    height: auto;
+    justify-content:center;
+    flex-wrap: nowrap;
+}
+.hizliErisimTop h2,.hizliErisimBottom h2{   
+    font-family: "Quicksand", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 20px;
+}
+.hizliErisimTop p,.hizliErisimBottom p{
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+}
+.hizliErisimTop .tlSign,.hizliErisimBottom .tlSign{
+    width: 4%;
+    height: 7%;
+    fill: rgb(55, 57, 57);
+}
+.hizliErisimTop .addPlace,.hizliErisimBottom .addPlace{
+    display: flex; /* Flexbox kullanarak yan yana yerleştirir */  
+    gap: 0px; /* İsteğe bağlı: öğeler arasında boşluk bırakır */ 
+    width: 100%;
+    height: 35px;
+    justify-content:space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    border-width: 0.01px; /* Kenar çizgisinin kalınlığı */  
+    border-color: #000; /* Kenar çizgisinin rengi (örneğin, siyah) */  
+    border-style: solid; /* Kenar çizgisi türü (örneğin, düz) */  
+}
+.hizliErisimTop .minus, .hizliErisimTop .plus, .hizliErisimBottom .minus, .hizliErisimBottom .plus{
+    font-family: "Prompt", sans-serif;
+    font-weight: 10;
+    font-size: 46px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.addBasket{
+    display: flex;
+    width: 100%;
+    height: 35px;
+    justify-content:center;
+    align-items: center;
+    margin-top: 10px;
+    background-color: blue;
+    border-width:0;
+    cursor: pointer;
+}
+.basketText{
+    color: white;
+}
+
+
+/*Modal*/
+.hidden{
+    display: none;
+    z-index: 1000;
+}
+.fixed {
+    position: fixed; /* Modalın sabit konumda olmasını sağlar */  
+}
+.inset-0 {
+    top: 0;  
+    right: 0;  
+    bottom: 0;  
+    left: 0; /* Modalın tüm ekranı kaplamasını sağlar */
+}
+.sekil{
+    display: flex;
+}
+.items-center {
+    align-items: center; /* Dikey ortalama */  
+}
+.justify-center {  
+    justify-content: center; /* Yatay ortalama */  
+}
+.bg-black {  
+    background-color: rgba(0, 0, 0, 0.5); /* Siyah arka plan */  
+}
+.bg-white {  
+    background-color: white; /* Beyaz arka plan */  
+}
+.rounded-lg {  
+    border-radius: 0.5rem; /* Kenar yuvarlama */  
+}
+.shadow-lg {  
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); /* Gölgelendirme */  
+}
+.w-800px {
+    width: 800px; /* Modal genişliği */  
+}
+.p-6 {
+    padding: 1.5rem; /* İç boşluk */  
+}
+.mt-4 {
+    margin-top: 1rem; /* Üst boşluk */  
+}
+.text-xl {
+    font-size: 1.25rem; /* Başlık boyutu */  
+}
+.font-semibold {  
+    font-weight: 600; /* Kalın yazı */  
+}
+.space-y-4 > * + * {  
+    margin-top: 1rem; /* Elemanlar arasında boşluk */  
+}
+.text-gray-700 {  
+    color: #4a5568; /* Metin rengi */  
+}
+.hover\:bg-blue-600:hover {  
+    background-color: #2b6cb0; /* Hover durumunda arka plan rengi */  
+}
+
+/*sepet üstüne sayı*/
+.relative {  
+    position: relative; /* Konumlandırma için relative ayarı */  
+}  
+
+.absolute {  
+    position: absolute; /* Sayının konumlandırılması için absolute ayarı */  
+}  
+
+.top-0 {  
+    top: 12px;
+}  
+
+.right-0 {  
+    right: 7px;
+}  
+/*
+.bg-red-500 {  
+    background-color: #1d9010;
+}
+.rounded-full {  
+    border-radius: 9999px; /* Tam yuvarlak kenar  
+}  
+
+.px-1 {  
+    padding-left: 0.25rem; /* Sol iç boşluk 
+    padding-right: 0.25rem; /* Sağ iç boşluk 
+}
+*/
+.text-white {  
+    color: rgb(0, 0, 0); /* Beyaz metin rengi */  
+}  
+
+.text-xs {  
+    font-size: 0.75rem; /* Küçük yazı boyutu */  
+}  
+
+
+
+@media (max-width: 900px) {
+    .hizliErisimTop, .hizliErisimBottom {
+        width: 95%;
+        margin-top: 10px; 
+        margin-left: 5px;
+        margin-bottom: 5px;
+    }
+    .hizliErisimTop img,.hizliErisimBottom img {  
+        width: 95%;
+        height: 150px;  
+    }  
+    .hizliErisimTop .price-container,.hizliErisimBottom .price-container{ 
+        display: flex; /* Flexbox kullanarak yan yana yerleştirir */  
+        gap: 0px; /* İsteğe bağlı: öğeler arasında boşluk bırakır */ 
+        width: 100%;
+        height: auto;
+        justify-content:center;
+        flex-wrap: nowrap;
+    }
+    .hizliErisimTop h2,.hizliErisimBottom h2{   
+        font-size: 10px;
+    }
+    .hizliErisimTop p,.hizliErisimBottom p{
+        font-size: 10px;
+    }
+    .hizliErisimTop .tlSign,.hizliErisimBottom .tlSign{
+        width: 8%;
+        height: 7%;
+        fill: rgb(55, 57, 57);
+    }
+    .hizliErisimTop .addPlace,.hizliErisimBottom .addPlace{
+        height: 20px;
+    }
+    .hizliErisimTop .minus, .hizliErisimTop .plus, .hizliErisimBottom .minus, .hizliErisimBottom .plus{
+        font-size: 26px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .addBasket{
+        height: 20px;
+        margin-top: 5px;
+    }
+}

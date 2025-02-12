@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../css/index.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+   integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+   crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="icon" href="/img/favicon/logo.png" type="image/png">
+   <title>by Şükrü</title>
+</head>
+<body>
+
+    <div class="main-area">
+        <a href="/">X</a>
+    </div>
+
+
+    <div class="register">
+        <div class="register-left"></div>
+        <div class="register-center">
+            <div>
+                <h1>Kayıt Ol</h1>
+            </div>
+            <div class="login-area" id="loginArea">
+                <a href="/login" id="loginText">Hesabınız var mı?</a>
+            </div>
+            <form>
+                <div class="form-group">
+                    <input type="text" name="email" required>
+                    <span>E-mail *</span>
+                </div>
+
+                <div class="form-group">
+                    <input type="text" name="name" required>
+                    <span>İsim *</span>
+                </div>
+
+                <div class="form-group">
+                    <input type="text" name="surname" required>
+                    <span>Soyisim *</span>
+                </div>
+
+                <div class="form-group">
+                    <input type="text" name="password" required>
+                    <span>Şifre *</span>
+                </div>
+
+                <div class="button-group">
+                    <button id="register">Giriş</button>
+                </div>
+            </form>
+        </div>
+        
+        <div class="register-right">
+            <div class="message-register" id="registerMessageArea">
+                <p id="registerMessage"></p>
+            </div>
+        </div> 
+
+    </div>
+
+    <script src="/js/scroll.js"></script>
+    <script>
+        const registerButton = document.getElementById('register');  
+        const form = registerButton.closest('form'); // Formu bul
+        const registerMessageArea = document.getElementById('registerMessageArea');
+        const loginArea= document.getElementById('loginArea');
+        const loginText=document.getElementById('loginText');
+
+        registerButton.addEventListener('click', (e) => {
+            e.preventDefault(); // Formun varsayılan gönderimini engelle  
+
+            const formData = new FormData(form); // Form verilerini al  
+
+            fetch('/register', {  
+                method: 'post',  
+                body: formData  
+            }).then(response => {  
+                if (!response.ok) {  
+                    throw new Error('Ağ yanıtı uygun değil: ' + response.status);  
+                }  
+                return response.json();  
+            }).then(res => {  
+                //console.log(res);  
+                if (res.case) {
+                    registerMessage.textContent = 'Kaydınız oluşturulmuştur.';
+                    registerMessageArea.classList.add('visible');
+                    setTimeout(() => {
+                        window.location.href = '/'; // 3 saniye bekledikten sonra anasayfaya yönlendir  
+                    }, 3000); // 3000 milisaniye = 3 saniye
+                    return;   
+                } else {
+                    if(!res.case && res.message==='Hatalı veri'){
+                        registerMessage.textContent = 'Hatalı veri girişi. Tekrar deneyiniz';
+                        registerMessageArea.classList.add('visible');
+                        return;
+                    } else if(!res.case && res.message==='Eksik bilgi girildi'){
+                        registerMessage.textContent = 'Eksik veya hatalı giriş! Lütfen kontrol edip tekrar deneyiniz';
+                        registerMessageArea.classList.add('visible');
+                        return;
+                    } else if(!res.case && res.message==='Mail bilgisi eksik veya hatalı'){
+                        registerMessage.textContent = 'Mail bilgisi eksik veya hatalı! Lütfen kontrol edip tekrar deneyiniz';
+                        registerMessageArea.classList.add('visible');
+                        return;
+                    } else if(!res.case && res.message==='İsim girişi hatalı'){
+                        registerMessage.textContent = 'İsim/Soyisim bilgisi eksik veya hatalı! Lütfen kontrol edip tekrar deneyiniz';
+                        registerMessageArea.classList.add('visible');
+                        return;
+                    } else if(!res.case && res.message==='Geçersiz şifre'){
+                        registerMessage.textContent = 'Geçersiz şifre! Lütfen kontrol edip tekrar deneyiniz';
+                        registerMessageArea.classList.add('visible');
+                        return;
+                    } else if(!res.case && res.message==='Sistemde kayıtlı'){
+                        registerMessage.textContent = 'Mail adresi zaten kayıtlı.';
+                        registerMessageArea.classList.add('visible');
+                        loginArea.classList.add('change');
+                        loginText.textContent='Hesabınızla giriş yapınız';
+                        return;
+                    }
+                }
+                
+            }).catch(error => {  
+                console.error('Hata:', error);  
+            });  
+        });  
+    
+    </script>
+
+</body>
+</html>

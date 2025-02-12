@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../public/css/index.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+   integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+   crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <title>by Şükrü</title>
+</head>
+<body>
+
+    <div class="main-area">
+        <a href="../index.html">X</a>
+    </div>
+
+
+    <div class="register">
+        <div class="register-left"></div>
+        <div class="register-center">
+            <div>
+                <h1>Kayıt Ol</h1>
+            </div>
+            <div class="login-area">
+                <a href="/login.html">Hesabınız var mı?</a>
+            </div>
+            <form>
+                <div class="form-group">
+                    <input type="text" name="email" required>
+                    <span>E-mail *</span>
+                </div>
+
+                <div class="form-group">
+                    <input type="text" name="name" required>
+                    <span>İsim *</span>
+                </div>
+
+                <div class="form-group">
+                    <input type="text" name="surname" required>
+                    <span>Soyisim *</span>
+                </div>
+
+                <div class="form-group">
+                    <input type="text" name="password" required>
+                    <span>Şifre *</span>
+                </div>
+
+                <div class="button-group">
+                    <button id="register">Giriş</button>
+                </div>
+            </form>
+        </div>
+        
+        <div class="register-right">
+            <div class="message-register" id="registerMessageArea">
+                <p id="registerMessage"></p>
+            </div>
+        </div>
+        
+
+    </div>
+
+   
+    
+
+
+    <script src="../public/js/scroll.js"></script>
+    <script>
+        const registerButton = document.getElementById('register');  
+        const form = registerButton.closest('form'); // Formu bul
+        const registerMessageArea = document.getElementById('registerMessageArea');
+        const loginArea= document.getElementById('loginArea');
+        const loginText=document.getElementById('loginText');
+
+        registerButton.addEventListener('click', (e) => {
+            e.preventDefault(); // Formun varsayılan gönderimini engelle  
+
+            const formData = new FormData(form); // Form verilerini al  
+
+            fetch('/register', {  
+                method: 'post',  
+                body: formData  
+            }).then(response => {  
+                if (!response.ok) {  
+                    throw new Error('Ağ yanıtı uygun değil: ' + response.status);  
+                }  
+                return response.json();  
+            }).then(res => {  
+                //console.log(res);  
+                if (res.case) {  
+                    window.location.href = '/'; // Kayıt başarılıysa anasayfaya yönlendir  
+                }
+                if(!res.case){ 
+                    registerMessage.textContent = 'Mail adresi zaten kayıtlı. Giriş yapınız'; // Hata mesajını ayarla  
+                    registerMessageArea.classList.add('visible');
+                    loginArea.classList.add('change');
+                    loginText.textContent='Hesabınızla giriş yapınız';
+                } 
+            }).catch(error => {  
+                console.error('Hata:', error);  
+            });  
+        });  
+    
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+.adv-area{
+    max-width: 1366px;  
+    height: 320px;
+    width: 70%;
+    display: flex;  
+    flex-wrap: nowrap;  
+    justify-content: center; /* Yatayda ortalamak için */  
+    align-items: center; /* Dikeyde ortalamak için */
+    background-color: #409444;
+    margin-top: 60px;
+    margin-left: 220px;
+}
+
+.adv-area-index{ 
+    display: flex;  
+    flex-wrap: nowrap;  
+    justify-content: space-around;  
+}
+
+.adv-area .adv-area-index img{
+    flex: 4;
+    align-self: flex-start;
+    margin-top: 2px;
+    width: 317px;
+    height: 319px;
+}
+.adv-area-text{
+    display: flex; 
+    flex: 8;
+    flex-wrap: nowrap;  
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+.adv-area-text p{
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+}
+
+.adv-area-text img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-top: 30px;
+}
+@media (max-width: 900px) {
+    .adv-area{
+        height: 160px;
+        width: 80%;
+        margin-top: 25px;
+        margin-left: 45px;
+    }
+    .adv-area .adv-area-index img{
+        flex: 4;
+        align-self: flex-start;
+        margin-top: -1px;
+        width: 160px;
+        height: 160px;
+    }
+    .adv-area-text{
+        margin-bottom: 10px;
+    }
+    .adv-area-text p{
+        font-size: 10px;
+    }
+    
+    .adv-area-text img{
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        margin-top: 10px;
+    }
+}

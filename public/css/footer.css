@@ -1,0 +1,119 @@
+footer{
+    margin-top: 80px;
+    width: 100%;
+    height: 350px;
+    background-color: #d6233b;
+}
+.info-title{
+    display: flex; /* Flexbox kullanarak yan yana yerleştirir */  
+    gap: 50px; /* İsteğe bağlı: öğeler arasında boşluk bırakır */ 
+    width: 100%;
+    height: auto;
+    /*flex-direction: column;*/
+    
+    flex-wrap: nowrap;
+    z-index: 10;
+}
+.info-title h3,.info-title h2{
+    color: white;
+}
+.info-title .left h3{
+    font-family: "Comfortaa", sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+}
+.info-title .left h2{
+    font-family: "Quicksand", sans-serif;
+    font-weight: 100;
+    font-size: 14px;
+}
+
+.info-title .center, .info-title .right{
+    font-family: "Comfortaa", sans-serif;
+    font-weight: 100;
+    font-size: 14px;
+}
+
+/*alt alta yazma*/
+.info .info-title .left, .info .info-title .center, .info .info-title .right{
+    width: 33%;
+    flex-direction: column;
+    height: 300px;
+    
+}
+.info .info-title .left i{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    margin-top: 60px;
+}
+.info .info-title .left .ttSoft h1{
+    font-family: "Rozha One", serif;
+    font-weight: 300;
+    font-size: 14px;
+    margin-top: 60px;
+    color: white;
+}
+
+.info .info-title h2{
+    font-family: "Quicksand", sans-serif;
+    font-weight: 100;
+    font-size: 14px;
+}
+
+.info .info-title .right .rightTel1, .info .info-title .right .rightEmail{
+    margin-top: 50px;
+}
+
+@media (max-width: 900px) {
+    footer{
+        margin-top: 40px;
+        width: 100%;
+        height: 250px;
+        background-color: #d6233b;
+    }
+    .info-title .left{
+        margin-left: 5px;
+    }
+    .info-title .right{
+        margin-right: 10px;
+    }
+    .info-title .left h3{
+        font-size: 13px;
+    }
+    .info-title .left h2{
+        font-size: 10px;
+    }
+    
+    .info-title .center, .info-title .right{
+        font-size: 10px;
+    }
+    .info-title .right{
+        margin-left: 10px;
+    }
+    .info .info-title .left, .info .info-title .center, .info .info-title .right{
+        height: 200px;
+    }
+
+    .info .info-title .left i{
+        width: 15px;
+        height: 15px;
+        margin-top: 30px;
+    }
+    .info .info-title .left .ttSoft h1{
+        font-size: 10px;
+        margin-top: 30px;
+    }
+    
+    .info .info-title h2{
+        font-size: 10px;
+    }
+    
+    .info .info-title .right .rightTel1, .info .info-title .right .rightEmail{
+        margin-top: 20px;
+    }
+    .frame{
+        width: 170px;
+        height: 150px;
+    }
+}

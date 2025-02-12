@@ -1,0 +1,244 @@
+.topbar2-sepetim {
+    flex: 12;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: #ffffff;
+    margin-top: 30px;
+    
+}  
+.topbar2-sepetim .wrapper{
+    width: 85%;
+    max-height: 60px;
+    display: flex;
+    margin-bottom: 10px;
+}
+.topbar2-sepetim .left-sepetim {  
+    display: flex;
+    flex: 2;
+    width: 100%;
+    align-items: center;
+}  
+.topbar2-sepetim .left-sepetim i{
+    font-family: "Rozha One", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.topbar2-sepetim .center-sepetim{
+    display: flex;
+    flex: 9;
+    cursor: pointer;
+    align-items: center;    
+    justify-content:flex-end;
+    
+}
+.topbar2-sepetim .center-sepetim a{
+    margin-left: 35px;
+    font-family: "Varela Round";
+    font-weight: lighter;
+    font-size: 14px;
+    color: rgb(52, 52, 52);
+}
+.topbar2-sepetim .center-sepetim a:last-child{
+    margin-right: 15px;
+}
+
+.parallax-sepetim .topbar2-sepetim .wrapper .right-sepetim {  
+    display: flex;  
+    flex: 1;  
+    cursor: pointer;
+    margin-left: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.topbar2-sepetim .right-sepetim span {  
+    margin-left: auto;
+}
+
+.topbar2-sepetim .right-sepetim span img {  
+    width: 20px;  
+    height: 20px;
+    margin-top: 6px;
+}
+.topbar2-sepetim .right-sepetim a{
+    font-family: "Varela Round";
+    font-weight: lighter;
+    font-size: 14px;
+    color: blue;
+    margin-right: 10px;
+}
+
+#basketIcon {  
+    width: 20px;  
+    height: 20px;
+    cursor: pointer;  
+}  
+
+
+.main {  
+    flex: 12;  
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+.left, .right, .center-2{
+    width: 18%;
+    flex: 2;
+}
+.center-bosluk{
+    flex: 1;
+}
+.center-1{
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.center-2 {  
+    margin-left: 10px;  
+    display: flex;
+    flex-direction: column;
+}  
+.underline {  
+    border-bottom: 0.5px solid #929090;
+    margin-top: 2px;
+}
+.center-1 h2, .center-2 h2 {  
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 20px;
+}
+.center-1 .sold1{
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+}
+.center-1 .sold1 img{
+    width: 150px;
+    height: 150px;
+}
+.center-1 .sold1 .name-price {
+    display: flexbox;
+    flex-direction: column;
+    margin-top: -25px;
+    margin-left: 15px;
+}
+.center-1 .sold1 .name-price .price-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.center-1 .sold1 .name-price h4 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-size: 20px;
+}
+.center-1 .sold1 .name-price h5 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-size: 17px;
+}
+.center-1 .sold1 .quantity-sold1{
+    width: 20%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 0.5px solid #929090;  
+    padding: 5px;
+    margin-left: auto;
+    cursor: pointer;
+}
+.center-1 .sold1 .quantity-sold1 h2{
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-size: 15px;
+}
+.center-1 .sold1 .trash{
+    display: flex;  
+    justify-content: flex-end;
+    width: 15%;
+    margin-left: auto;
+    cursor: pointer;
+}
+.center-1 .sold1 .trash img{
+    width: 20px;
+    height: 20px;
+}
+
+@media (max-width: 900px) {
+    
+    .topbar2-sepetim .left-sepetim {  
+        display: flex;
+        flex: 3;
+        width: 100%;
+        align-items: center;
+        cursor: pointer;
+    }  
+    .topbar2-sepetim .left-sepetim i{
+        font-size: 14px;
+    }
+    .topbar2-sepetim .center-sepetim{
+        display: flex;
+        flex: 6;
+        cursor: pointer;
+        align-items: center;    
+        justify-content:flex-end;
+    }
+    .topbar2-sepetim .center-sepetim a{
+        margin-left: 15px;
+        font-family: "Varela Round";
+        font-weight: lighter;
+        font-size: 11px;
+        color: rgb(52, 52, 52);
+    }
+    .topbar2-sepetim .center-sepetim a:last-child{
+        margin-right: 10px;
+    }
+    .topbar2-sepetim .right-sepetim {  
+        display: flex;  
+        flex: 1;  
+        cursor: pointer;
+        margin-left: 4px;
+    }
+}
+
+
+.topbar2-sepetim .wrapper{
+    opacity: 0;
+    transition: all 0.5s;
+    transform: translateY(-10px);
+}
+.topbar2-sepetim .wrapper.active{
+    opacity: 1;
+    transform: translateY(0);
+
+}
+.topbar2-sepetim .wrapper .center-sepetim a{
+    transform: translateX(-20px);
+    opacity: 0;
+}
+
+.topbar2-sepetim .wrapper.active .center-sepetim a{
+    transition: all 0.3s;
+    transform: translate(0px);
+    opacity: 1;
+}
+.topbar2-sepetim .wrapper.active .center-sepetim a:nth-child(1){
+    transition-duration:0.2s ;
+}
+.topbar2-sepetim .wrapper.active .center-sepetim a:nth-child(2){
+    transition-duration:0.6s ;
+}
+.topbar2-sepetim .wrapper.active .center-sepetim a:nth-child(3){
+    transition-duration:0.9s ;
+}

@@ -1,0 +1,476 @@
+.topbar2-urun {
+    flex: 12;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: #ffffff;
+    margin-top: 30px;
+    
+}  
+.topbar2-urun .wrapper{
+    width: 80%;
+    max-height: 60px;
+    display: flex;
+    margin-bottom: 10px;
+}
+.topbar2-urun .left-urun {  
+    display: flex;
+    flex: 2;
+    width: 100%;
+    align-items: center;
+}  
+.topbar2-urun .left-urun i{
+    font-family: "Rozha One", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.topbar2-urun .center-urun{
+    display: flex;
+    flex: 9;
+    cursor: pointer;
+    align-items: center;    
+    justify-content:flex-end;
+}
+.topbar2-urun .center-urun a{
+    margin-left: 35px;
+    font-family: "Varela Round";
+    font-weight: lighter;
+    font-size: 14px;
+    color: rgb(52, 52, 52);
+}
+.topbar2-urun .center-urun a:last-child{
+    margin-right: 15px;
+}
+
+.topbar2-urun .right-urun {  
+    display: flex;  
+    flex: 1;  
+    cursor: pointer;
+    margin-left: 10px;
+    margin-top: 14px;
+    justify-content:space-around;
+}
+
+#basketIconUrun {  
+    margin-left: auto;
+    width: 20px;  
+    height: 20px;
+    margin-top: 1px;
+}
+
+.topbar2-urun .right-urun a{
+    font-family: "Varela Round";
+    font-weight: lighter;
+    font-size: 14px;
+    color: blue;
+    margin-right: 10px;
+}
+.topbar2-urun .wrapper{
+    opacity: 0;
+    transition: all 0.5s;
+    transform: translateY(-10px);
+}
+.topbar2-urun .wrapper.active{
+    opacity: 1;
+    transform: translateY(0);
+
+}
+.topbar2-urun .wrapper .center-urun a{
+    transform: translateX(-20px);
+    opacity: 0;
+}
+
+.topbar2-urun .wrapper.active .center-urun a{
+    transition: all 0.3s;
+    transform: translate(0px);
+    opacity: 1;
+}
+.topbar2-urun .wrapper.active .center-urun a:nth-child(1){
+    transition-duration:0.2s ;
+}
+.topbar2-urun .wrapper.active .center-urun a:nth-child(2){
+    transition-duration:0.6s ;
+}
+.topbar2-urun .wrapper.active .center-urun a:nth-child(3){
+    transition-duration:0.9s ;
+}
+
+
+.relative-urun {  
+    position: relative; /* Konumlandırma için relative ayarı */  
+}  
+
+.absolute-urun {  
+    position: absolute; /* Sayının konumlandırılması için absolute ayarı */  
+}  
+.top-0-urun {  
+    top: 5px;
+}  
+
+.right-0-urun {  
+    right: 3px;
+}  
+/*
+.bg-red-500 {  
+    background-color: #1d9010;
+}
+.rounded-full {  
+    border-radius: 9999px; /* Tam yuvarlak kenar  
+}  
+
+.px-1 {  
+    padding-left: 0.25rem; /* Sol iç boşluk 
+    padding-right: 0.25rem; /* Sağ iç boşluk 
+}
+*/
+.topbar2-urun .right-urun .text-white {  
+    color: rgb(0, 0, 0); /* Beyaz metin rengi */  
+}  
+
+.topbar2-urun .right-urun .text-xs {  
+    font-size: 0.75rem; /* Küçük yazı boyutu */  
+}
+
+
+.selected-product {
+    height: auto;
+    display: flex;
+    flex: 12;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+
+.selected-product-area {
+    height: auto;
+    display: flex;
+    width: 63%;  
+    justify-content: space-between;
+}
+.selected-product-area .product-vision {  
+    width: 55%;
+    height: auto;
+    margin: 50px 15px;
+}
+.selected-product-area .product-vision img{
+    max-width: 500px;
+    height: 450px;
+    background-size: cover;
+    border: .5px solid #979090;
+}
+.selected-product-area .product-vision p{
+    margin-top: 50px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 250;
+    font-style: normal;
+    font-size: 16px;
+    text-align: center;
+}
+
+
+
+.selected-product-area .product-text {
+    width: 40%;
+    display: flex;  
+    flex-direction: column;
+    justify-content: left;
+    margin-top: 40px;
+}
+.selected-product-area .product-text h2{
+    font-family: "Quicksand", sans-serif;
+    font-weight:100;
+    font-style: normal;
+    font-size: 30px;
+}
+.selected-product-area .product-text .productPrice-area{
+    width: 100%;
+    height: 40px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.selected-product-area .product-text .productPrice-area h1{
+    font-family: "Poppins", sans-serif;
+    font-weight: 250;
+    font-style: normal;
+    font-size: 23px;
+}
+.product-text .productPrice-area .tlSign{
+    width: 20px;
+    height: 20px;
+    fill:rgb(40, 42, 41); /* İç renk */  
+    /*stroke: rgb(104, 98, 98);      /* Sınır rengi */  
+    stroke-width: .01;
+}
+.selected-product-area .product-text .addPlace-urun{
+    width: 400px;
+    height: 40px;
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+    border: .5px solid #979090;
+}
+.addPlace-urun .quantity-group-urun{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.addPlace-urun .minus-urun,
+.addPlace-urun .quantity-urun,
+.addPlace-urun .plus-urun{
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 20px;
+}
+.addPlace-urun .kg-urun{
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+
+
+
+.selected-product-area .product-text .add-basket{
+    width: 100%;
+    height: 40px;
+    background-color: blue;
+    border: 0;
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 40px;
+}
+
+
+.selected-product-area .product-info {
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 40px;
+    border-bottom: .5px solid #979090;
+}  
+.selected-product-area .product-info h3{
+    font-family: "Poppins", sans-serif;
+    font-weight: 250;
+    font-style: normal;
+    font-size: 15px;
+}
+.selected-product-area .product-info h4 {
+    margin-left: 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 20px;
+}
+.info-details {
+    max-height: 0;
+    overflow: hidden;
+    /*transition: max-height 0.3s ease-out;*/
+    flex-direction: column;
+}
+.info-details.open {  
+    max-height: 400px;
+    /*transition: max-height 0.5s ease-in; /* Daha iyi bir geçiş efekti */
+}  
+
+
+.product-text .distance-selling-agreement {
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 40px;
+    border-bottom: .5px solid #979090;
+}
+.product-text .distance-selling-agreement h3{
+    font-family: "Poppins", sans-serif;
+    font-weight: 250;
+    font-style: normal;
+    font-size: 15px; 
+}
+.distance-info {  
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 20px;
+    cursor: pointer;
+}
+.space-y-4, .mt-4{
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 14px;
+}
+
+
+
+@media (max-width: 900px) { 
+    .topbar2-urun .left-urun {  
+        display: flex;
+        flex: 3;
+        width: 100%;
+        align-items: center;
+        cursor: pointer;
+    }  
+    .topbar2-urun .left-urun i{
+        font-size: 14px;
+    }
+    .topbar2-urun .center-urun{
+        display: flex;
+        flex: 7;
+        cursor: pointer;
+        align-items: center;    
+        justify-content:flex-end;
+    }
+    .topbar2-urun .center-urun a{
+        margin-left: 15px;
+        font-family: "Varela Round";
+        font-weight: lighter;
+        font-size: 11px;
+        color: rgb(52, 52, 52);
+    }
+    .topbar2-urun .center-urun a:last-child{
+        margin-right: 5px;
+    }
+    .topbar2-urun .right-urun {
+        display: flex;
+        flex: 2;
+        cursor: pointer;
+        margin-left: 4px;
+    }
+
+    #basketIconUrun {  
+        margin-left: auto;
+        width: 15px;  
+        height: 15px;
+        margin-top: 4px;
+    }
+    .selected-product {
+        height: auto;
+        display: flex;
+        flex: 12;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+    }
+    
+
+    .selected-product-area {
+        width: 93%;  
+    }
+    .selected-product-area .product-vision {  
+        width: 55%;
+        height: auto;
+        margin: 20px 5px;
+    }
+    .selected-product-area .product-vision img{
+        max-width: 300px;
+        height: 250px;
+        background-size: cover;
+        border: .5px solid #979090;
+    }
+    .selected-product-area .product-vision p{
+        margin-top: 20px;
+        font-size: 10px;
+    }
+
+    .selected-product-area .product-text {
+        width: 40%;
+        margin-top: 20px;
+    }
+    .selected-product-area .product-text h2{
+        font-size: 16px;
+    }
+    .selected-product-area .product-text .productPrice-area{
+        width: 100%;
+        height: 40px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    .selected-product-area .product-text .productPrice-area h1{
+        font-size: 13px;
+    }
+    .product-text .productPrice-area .tlSign{
+        width: 20px;
+        height: 30px;
+        fill:rgb(40, 42, 41); /* İç renk */  
+        /*stroke: rgb(104, 98, 98);      /* Sınır rengi */  
+        stroke-width: .01;
+    }
+    .selected-product-area .product-text .addPlace-urun{
+        height: 30px;
+        margin-left: 20px;
+        border: .5px solid #979090;
+    }
+    .addPlace-urun .minus-urun,
+    .addPlace-urun .quantity-urun,
+    .addPlace-urun .plus-urun{
+        font-size: 12px;
+    }
+    .addPlace-urun .kg-urun{
+        font-size: 13px;
+        margin-left: 6px;
+    }
+
+
+    .selected-product-area .product-text .add-basket{
+        height: 30px;
+        font-size: 11px;
+        margin-top: 20px;
+    }
+    
+    .selected-product-area .product-info {
+        margin-top: 20px;
+    }  
+    .selected-product-area .product-info h3{
+        font-size: 10px;
+    }
+    .selected-product-area .product-info h4 {
+        font-size: 10px; /* Adjust font size as needed */
+    }
+    .info-details.open {  
+        max-height: 200px;
+        /*transition: max-height 0.5s ease-in; /* Daha iyi bir geçiş efekti */
+        font-family: "Poppins", sans-serif;
+        font-weight: 200;
+        font-style: normal;
+        font-size: 10px;
+    }  
+    
+    
+    .product-text .distance-selling-agreement {
+        margin-top: 20px;
+    }
+    .product-text .distance-selling-agreement h3{
+        font-size: 10px; 
+    }
+    .distance-info {
+        font-size: 10px;
+    }
+    .space-y-4, .mt-4{
+        font-family: "Poppins", sans-serif;
+        font-weight: 200;
+        font-style: normal;
+        font-size: 10px;
+    }
+}

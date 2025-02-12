@@ -1,0 +1,152 @@
+.topbar2 {  
+    flex: 12;
+    width: 100%;
+    display: flex; /* Flex konteyneri yap */  
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end; /* Elemanları alt kenara yasla */  
+    background-color: #ffffff;
+    margin-top: 30px;
+    
+}  
+.topbar2 .wrapper{
+    width: 100%;
+    max-height: 60px;
+    display: flex;
+    margin-bottom: 10px;
+}
+.topbar2 .left {  
+    display: flex; /* Flex konteyneri yap */  
+    flex: 2;
+    width: 100%;
+    align-items: center;
+}  
+.topbar2 .left i{
+    font-family: "Rozha One", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 24px;
+    cursor: pointer; /* Fare imlecini el işareti yap */
+}
+
+.topbar2 .center{
+    display: flex; /* Flex konteyneri yap */  
+    flex: 9;
+    cursor: pointer;
+    align-items: center;    
+    justify-content:flex-end;
+    
+}
+.topbar2 .center a{
+    margin-left: 35px;
+    font-family: "Varela Round";
+    font-weight: lighter;
+    font-size: 14px;
+    color: rgb(52, 52, 52);
+}
+.topbar2 .center a:last-child{
+    margin-right: 15px;
+}
+
+.topbar2 .right {  
+    display: flex;  
+    flex: 1;  
+    cursor: pointer;
+    margin-left: 10px;
+    align-items: center;
+    
+}
+
+.topbar2 .right span {  
+    margin-left: auto; /* Bu kural, diğer span'ların konumuna etki eder ve son öğe sağa yaslanır */  
+}
+
+.topbar2 .right span img {  
+    width: 20px;  
+    height: 20px;
+    margin-top: 6px;
+}
+.topbar2 .right .giris a{
+    font-family: "Varela Round";
+    font-weight: lighter;
+    font-size: 14px;
+    color: blue;
+    margin-right: 10px;
+}
+/*
+#arrowIcon {
+    display: block;
+    width: 15px;  
+    height: 15px;  
+    margin-top: 9px;
+    margin-left: 3px;
+    cursor: pointer;  
+    margin-right: 35px;
+}
+    */
+@media (max-width: 900px) {
+    .topbar2 .left {  
+        display: flex; /* Flex konteyneri yap */  
+        flex: 3;
+        width: 100%;
+        align-items: center;
+        cursor: pointer; /* Fare imlecini el işareti yap */
+    }  
+    .topbar2 .left i{
+        font-size: 14px;
+    }
+    .topbar2 .center{
+        display: flex; /* Flex konteyneri yap */  
+        flex: 6;
+        cursor: pointer;
+        align-items: center;    
+        justify-content:flex-end;
+    }
+    .topbar2 .center a{
+        margin-left: 15px;
+        font-family: "Varela Round";
+        font-weight: lighter;
+        font-size: 11px;
+        color: rgb(52, 52, 52);
+    }
+    .topbar2 .center a:last-child{
+        margin-right: 10px;
+    }
+    .topbar2 .right {  
+        display: flex;  
+        flex: 3;
+        flex-wrap: nowrap;
+        cursor: pointer;
+        margin-left: 4px;
+    }
+}
+
+.topbar2 .wrapper{
+    opacity: 0;
+    transition: all 0.5s;
+    transform: translateY(-10px);
+}
+.topbar2 .wrapper.active{
+    opacity: 1;
+    transform: translateY(0);
+
+}
+.topbar2 .wrapper .center a{
+    transform: translateX(-20px);
+    opacity: 0;
+}
+
+.topbar2 .wrapper.active .center a{
+    transition: all 0.3s;
+    transform: translate(0px);
+    opacity: 1;
+}
+.topbar2 .wrapper.active .center a:nth-child(1){
+    transition-duration:0.2s ;
+}
+.topbar2 .wrapper.active .center a:nth-child(2){
+    transition-duration:0.6s ;
+}
+.topbar2 .wrapper.active .center a:nth-child(3){
+    transition-duration:0.9s ;
+}

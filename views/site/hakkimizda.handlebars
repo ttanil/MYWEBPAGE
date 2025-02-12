@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../css/index.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+   integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+   crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="icon" href="/img/favicon/logo.png" type="image/png">
+   <title>by Şükrü</title>
+</head>
+<body>
+   <div class="topbar1">
+      <div class="wrapper target">
+         <h1>DOĞAL, TAZE VE ÖZENLE HAZIRLANMIŞ ET ÜRÜNLERİ</h1>
+      </div>
+   </div>
+
+   <section>
+      <section class="parallax-1" id="parallaxId">
+         <div class="topbar2">
+            <div class="wrapper target">
+               <div class="left">
+                  <i>kasapzakir</i>
+               </div>
+               <div class="center">
+                  <a href="/">Anasayfa</a>
+                  <a href="/magaza">Mağaza</a>
+                  <a href="/hakkimizda">Hakkımızda</a>
+               </div>
+               <div class="right">
+                  <span>
+                     <div>
+
+                        {{#if user}}
+                        <img src="/img/user/circle-user.png" alt="user" id="circleUserIcon" style="cursor: pointer;">
+
+                           <div id="dropdownMenu" style="display: none;"> 
+                              <ul>  
+                                 <li>Siparişlerim</li>  
+                                 <li>Adresim</li>  
+                                 <li>Cüzdanım</li>
+                                 <li>İstek Listem</li>
+                                 <li>Hesabım</li>
+                                 <li>  
+                                    <a href="./logout">Çıkış</a>  
+                                 </li>  
+                              </ul>  
+                           </div>
+                           <span>
+                            <!--  <img src="/img/user/arrow.svg" alt="arrow" id="arrowIcon">-->
+                           
+                           </span>
+                        {{/if}}
+                           
+                        {{#unless user}}
+                           <span class="giris">
+                              <a href="/register">Giriş</a>
+                           </span>
+                        {{/unless}}
+                        
+
+                     </div>  
+                  </span>
+                  
+                  <span>  
+                     <a href="/sepetim">  
+                        <img src="/img/user/basket-shopping-simple.png" alt="basket" id="basketIcon">  
+                     </a>  
+                  </span>
+               </div>
+            </div>
+         </div>
+
+         <div class="parallax-foreground-hakkimizda">
+            <h1>Hikayemiz</h1>
+         </div> 
+      </section>
+   </section>
+
+   <div class="hakkimizda-text-area">
+      <div class="hakkimizda-text">
+         <h3>
+            Kasapzakir, 30 yıllık deneyimiyle taptaze, doğal ve sağlıklı et ürünleri sunmakta öncü bir markadır. 
+            Tecrübeli ekibimiz, çiftliklerden özenle seçilen en kaliteli etleri, sürdürülebilir yöntemlerle sizlere ulaştırmak için 
+            titizlikle çalışmaktadır. Müşteri memnuniyetini her zaman ön planda tutarak, sağlıklı beslenme için gerekli olan tüm et 
+            çeşitlerini online mağazamızda bulabilirsiniz.<br>
+            Zengin ürün yelpazemizde doğal lezzetleri keşfedin; sucuktan kıymaya, biftekten tavuk etine kadar geniş bir yelpaze sunuyoruz.
+            Her biri hijyenik koşullarda ve özenle hazırlanmış ürünlerimizle sofralarınıza sağlık katmanın yanı sıra, damak çatlatan 
+            lezzetler sunuyoruz.<br>
+            Kasapzakir olarak, sadece sağlığınızı değil, aynı zamanda lezzet deneyiminizi de önemsiyoruz. Geleneksel tariflerle 
+            hazırlanmış et ürünlerimiz, aile sofralarınızı şenlendirmek için ideal bir seçimdir. Sevdiklerinizle keyif dolu anlar 
+            yaşayabilirsiniz.<br>
+            Hızlı ve güvenilir online alışveriş imkanı ile doğal ve sağlıklı et ürünlerine kolaylıkla ulaşabilir, her türlü özel 
+            gün veya günlük yemekleriniz için mükemmel seçimler yapabilirsiniz. Şimdi, sofralarınıza sağlık ve lezzet katmanın tam 
+            zamanı!
+         </h3>
+      </div>
+   </div>
+
+   <footer>
+      <section class="info">
+         <div class="info-title">
+            <div class="left">
+               <span>
+                  <h3>Kalite</h3>
+               </span>
+               <span>
+                  <h2>Doğal ve sağlıklı et ürünleri sunuyoruz.</h2>
+               </span>
+               <span>
+                  <i class="fa-brands fa-square-x-twitter"></i>
+                  <i class="fa-brands fa-square-instagram"></i>
+                  <i class="fa-brands fa-square-facebook"></i>
+               </span>
+               <div class="ttSoft">
+                  <h1>TTsoftware© 2024. All rights reserved.</h1>
+               </div>  
+            </div>
+
+            <div class="center">
+               <h3>ADRES</h3>
+               <iframe class="frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d762.8812794954108!2d27.651326599999997!3d40.1082996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14b693fdbc468beb%3A0xb2c0207f2a4528d5!2sKasap%20Zakir!5e0!3m2!1str!2str!4v1725693718240!5m2!1str!2str"
+                  width="300" 
+                  height="200" 
+                  style="border:0;" 
+                  allowfullscreen="" 
+                  loading="lazy" 
+                  referrerpolicy="no-referrer-when-downgrade">
+               </iframe>
+               <span>
+                  <h2>Kurtuluş Mahallesi, Hüseyin Tümer <br>Caddesi No:32/c Gönen, Balıkesir</h2>
+               </span>
+            </div>
+            
+            <div class="right">
+               <h3>İLETİŞİM</h3>
+               <div class="rightTel1">
+                  <h2>0 266 762 3300</h2>
+               </div>
+               <div class="rightTel2">
+                  <h2>0 540 762 3300</h2>
+               </div>
+               <div class="rightEmail"></div>
+                  <h2>bilgi@kasapzakir.shop</h2>
+               </div>
+            </div>
+         </div>
+      </section>
+   </footer>
+
+   <script src="/js/circleUser.js"></script>
+   <script src="/js/scroll.js"></script>
+</body>
+</html>

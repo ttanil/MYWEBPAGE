@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../public/css/index.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+   integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+   crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <title>by Şükrü</title>
+   <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+   <div class="topbar1">
+      <div class="wrapper target">
+         <h1>DOĞAL, TAZE VE ÖZENLE HAZIRLANMIŞ ET ÜRÜNLERİ</h1>
+      </div>
+   </div>
+
+   <section>
+      <section class="parallax-urun">
+         <div class="topbar2-urun">
+            <div class="wrapper target">
+               <div class="left-urun">
+                  <i>kasapzakir</i>
+               </div>
+               <div class="center-urun">
+                  <a href="/">Anasayfa</a>
+                  <a href="magaza.html">Mağaza</a>
+                  <a href="hakkimizda.html">Hakkımızda</a>
+               </div>
+               <div class="right-urun">
+                  <span>
+                     <div>  
+                        <img src="../public/img/user/circle-user.png" alt="user" id="circleUserIcon" style="cursor: pointer;">  
+                        <div id="dropdownMenu" style="display: none;">  
+                              <ul>  
+                                 <li>Siparişlerim</li>  
+                                 <li>Adresim</li>  
+                                 <li>Cüzdanım</li>
+                                 <li>İstek Listem</li>
+                                 <li>Hesabım</li>
+                                 <li>Çıkış</li>
+                              </ul>  
+                        </div>  
+                     </div>  
+                  </span>
+                  <span>
+                     <img src="../public/img/user/arrow.svg" alt="arrow" id="arrowIcon" class="arrow-urun">
+                  </span>
+                  <span>
+                     <img src="../public/img/user/basket-shopping-simple.png" alt="basket" id="basketIcon">
+                  </span>
+               </div>
+            </div>
+         </div>
+
+         <div class="selected-product">
+            <div class="selected-product-area">
+               <div class="product-vision">
+                  <img src="../public/img/kirmiziEtUrunleri/dana_kiyma.png" alt="selectedProduct" id="selectedProduct">
+                  <div>
+                     <p>Kasapzakir, 30 yıllık deneyimiyle taptaze, doğal ve sağlıklı et  
+                        ürünleri sunmaktadır. Tecrübeli ekibimiz, en kaliteli etleri seçerek  
+                        sizlere ulaştırır. Müşteri memnuniyetini ön planda tutarak, sağlıklı beslenme  
+                        için gerekli olan tüm et çeşitlerini online mağazamızda bulabilirsiniz. 
+                        Doğal lezzetleri keşfedin ve sofralarınıza sağlık katın. </p>
+                  </div>
+               </div>
+               <div class="product-text">
+                  <h2 id="productName">Dana Kıyma</h2>
+                  <div class="productPrice-area">
+                     <h1 id="productPrice">600,00</h1>
+                     <svg xmlns="http://www.w3.org/2000/svg" id="priceSignUrun" viewBox="0 0 24 24" class="tlSign">  
+                        <path d="M20.5,11c-.829,0-1.5,.672-1.5,1.5,0,4.687-3.813,8.5-8.5,8.5-.827,0-1.5-.673-1.5-1.5v-5.403l6.013-2.186c.778-.283,1.18-1.145,.897-1.923-.283-.779-1.144-1.181-1.922-.897l-4.987,1.814v-1.807l6.013-2.186c.778-.283,1.18-1.145,.897-1.923-.283-.779-1.144-1.181-1.922-.897l-4.987,1.814V1.5c-.034-1.972-2.967-1.971-3,0V6.994l-3.013,1.096c-.778,.283-1.18,1.145-.897,1.923,.282,.787,1.164,1.177,1.922,.897l1.987-.723v1.807l-3.013,1.096c-.778,.283-1.18,1.145-.897,1.923,.282,.787,1.164,1.177,1.922,.897l1.987-.723v4.312c0,2.481,2.019,4.5,4.5,4.5,6.341,0,11.5-5.159,11.5-11.5,0-.828-.671-1.5-1.5-1.5Z"/>  
+                     </svg>
+                     <div class="addPlace-urun" id="addPlaceUrun">
+                        <p class="minus-urun" id="1minusMagaza">- </p>
+                        <div class="quantity-group-urun">
+                           <p class="quantity-urun" id="1quantityMagaza">1 </p>
+                           <p class="kg-urun" id="kgUrun">kg </p>
+                        </div>
+                        <p class="plus-urun" id="1plusMagaza">+ </p>
+                     </div>
+                  </div>
+                  <button class="add-basket" id="addBasketUrun">
+                     <p class="basketText">Sepete Ekle </p>
+                  </button>
+                  <div class="product-info" id="productInfo">
+                     <h3>ÜRÜN BİLGİLERİ</h3>
+                     <h4 id="toggleInfo" style="cursor: pointer;" class="toggle-info">+</h4>
+                     <div id="infoDetails" class="info-details">
+                         <p>Standart olarak az yağlı olarak hazırlanır. 
+                           <br>Ancak siparişinizin yağlı ya da çok yağlı olmasını 
+                           <br> isterseniz sipariş notunda belirtmeniz yeterli.</p>
+                     </div>
+                  </div>
+
+                  <div class="distance-selling-agreement" id="distanceSellingAgreement">  
+                     <h3 class="text-lg font-semibold">UZAKTAN SATIŞ SÖZLEŞMESİ</h3>  
+                     <h4 id="distanceInfo" class="distance-info" onclick="openInfoMenu()">+</h4>  
+                  </div>  
+               </div>
+            </div>
+         </div> 
+           
+      </section>
+   </section>
+
+
+   <!-- Modal -->  
+   <div id="myModal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden">  
+      <div class="bg-white rounded-lg shadow-lg w-[800px] p-6">  
+          <h4 class="text-xl font-semibold mb-4">Bilgi</h4>  
+          <div class="space-y-4 text-gray-700">  
+              <div>  
+                  <h5 class="font-semibold">Fiyat ve Ödeme Şartları:</h5>  
+                  <p>Ürünlerin fiyatları, kasapzakir.com web sitesinde belirtilmiştir. Toplam maliyet, seçilen ürünlerin 
+                     fiyatlarının toplamıdır. Ödeme yöntemleri: Kredi kartı ve havaledir.</p>  
+              </div>  
+              <div>  
+                  <h5 class="font-semibold">Teslimat Şartları:</h5>  
+                  <p>Ürünlerin teslimat süresi, siparişin onaylanmasından itibaren en geç 3-5 iş günü içinde yapılacaktır. 
+                     Teslimat yeri, alıcının sipariş sırasında belirttiği adrestir. Soğuk zincir gereksinimleri, 
+                     ürünlerin tazeliği için önemlidir ve teslimat sırasında korunacaktır. Kargo ücreti, siparişin toplam maliyetine 
+                     eklenir ve alıcıya bildirilecektir.</p>  
+              </div>  
+              <div>  
+                  <h5 class="font-semibold">Cayma Hakkı:</h5>  
+                  <p>Alıcı, ürünleri teslim aldıktan sonra 14 gün içinde iade etme hakkına sahiptir. Ancak, gıda ürünleri 
+                     için bu hak sınırlıdır; bozulabilir ürünler için cayma hakkı geçerli değildir.</p>  
+              </div>  
+              <div>  
+                  <h5 class="font-semibold">Garanti ve İade Koşulları:</h5>  
+                  <p>Ürünlerin tazeliği ve kalite garantisi, kasapzakir tarafından sağlanmaktadır. Bozuk veya hatalı 
+                     ürünlerin iade şartları, ürün teslim alındıktan sonra 14 gün içinde yapılmalıdır. İade prosedürleri, 
+                     alıcıya bildirilecektir.</p>  
+              </div>  
+              <div>  
+                  <h5 class="font-semibold">Saklama ve Taşıma Koşulları:</h5>  
+                  <p>Ürünler, teslimat sırasında soğuk zincir gereksinimlerine uygun olarak saklanmalıdır. Taşıma sırasında 
+                     soğuk zincirin korunması, ürünlerin tazeliği için önemlidir.</p>  
+              </div>  
+              <div>  
+                  <h5 class="font-semibold">Sorumluluklar:</h5>  
+                  <p>Tarafların yükümlülükleri ve sorumlulukları, gıda güvenliği ve hijyen standartlarına uyum sağlamaktır. 
+                     Satıcı, ürünlerin tazeliği ve kalitesinden sorumludur.</p>  
+              </div>  
+              <div>  
+                  <h5 class="font-semibold">Uyuşmazlık Çözümü:</h5>  
+                  <p>Taraflar arasında çıkabilecek uyuşmazlıkların çözümü için idari makamlar yetkilidir. Uyuşmazlık durumunda, 
+                     öncelikle uzlaşma yoluna gidilecektir.</p>  
+              </div>  
+              <div>  
+                  <h5 class="font-semibold">Yürürlük Tarihi:</h5>  
+                  <p>Bu sözleşme, ödeme yapıldığı tarihten itibaren yürürlüğe girecektir.</p>  
+              </div>  
+          </div>  
+          <button onclick="closeInfoMenu()" class="mt-4 bg-blue-500 text-white font-semibold py-2 px-4 rounded hover:bg-blue-600">Kapat</button>  
+      </div>  
+   </div>
+
+   <footer>
+    <section class="info">
+       <div class="info-title">
+          <div class="left">
+             <span>
+                <h3>Kalite</h3>
+             </span>
+             <span>
+                <h2>Doğal ve sağlıklı et ürünleri sunuyoruz.</h2>
+             </span>
+             <span>
+                <i class="fa-brands fa-square-x-twitter"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+                <i class="fa-brands fa-square-facebook"></i>
+             </span>
+             <div class="ttSoft">
+                <h1>TTsoft© 2024. All rights reserved.</h1>
+             </div>  
+          </div>
+
+          <div class="center">
+             <h3>ADRES</h3>
+             <iframe class="frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d762.8812794954108!2d27.651326599999997!3d40.1082996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14b693fdbc468beb%3A0xb2c0207f2a4528d5!2sKasap%20Zakir!5e0!3m2!1str!2str!4v1725693718240!5m2!1str!2str"
+                width="300" 
+                height="200" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+             </iframe>
+             <span>
+                <h2>Kurtuluş Mahallesi, Hüseyin Tümer <br>Caddesi No:32/c Gönen, Balıkesir</h2>
+             </span>
+          </div>
+          
+          <div class="right">
+             <h3>İLETİŞİM</h3>
+             <div class="rightTel1">
+                <h2>0 266 762 3300</h2>
+             </div>
+             <div class="rightTel2">
+                <h2>0 540 762 3300</h2>
+             </div>
+             <div class="rightEmail"></div>
+                <h2>bilgi@kasapzakir.shop</h2>
+             </div>
+          </div>
+       </div>
+    </section>
+    </footer>
+
+    <script src="../public/js/circleUser.js"></script>
+    <script src="../public/js/scroll.js"></script>
+    <script src="../public/js/plus.js"></script>
+    <script src="../public/js/quantity.js"></script>
+    <script src="../public/js/openInfoWindow.js"></script>
+    
+
+</body>
+</html>

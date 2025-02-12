@@ -1,0 +1,249 @@
+.magaza{
+    max-width: 1366px;
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: #ffffff;
+}
+.magaza .magaza-place{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 86%;
+}
+.magaza .left-menu{
+    flex:2;
+    display: flex;  
+    flex-direction: column;
+    cursor: pointer;
+}
+.magaza .left-menu h1{
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 18px;
+    border-bottom: .5px solid #979090;
+    padding-bottom: 5px;
+    margin-right: 50px;
+}
+
+.magaza .left-menu-elements{
+    width: 100%;
+    height: 200px;
+}
+.magaza .left-menu-elements h3{
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 14px;
+}
+.magaza .left-menu-elements h3:first-child{
+    font-size: 16px;
+}
+.magaza .left-menu-elements h3:last-child{
+    border-bottom: .5px solid #979090;
+    padding-bottom: 15px;
+    margin-right: 50px;
+}
+
+
+
+
+.magaza .right-visuals .visual-group {  
+    display: flex; /* Flexbox özelliğini etkinleştirin */  
+    flex-wrap: wrap; /* Öğelerin taşmasını önlemek için */  
+    justify-content: flex-start; /* Öğeleri soldan başlat */  
+    gap: 20px; /* Öğeler arasında boşluk bırakmak için */  
+}  
+
+.magaza .right-visuals .visual1{  
+    flex: 1 1 calc(25% - 20px); /* Tek bir satırı %25 genişlikte kaplayacak */  
+    max-width: calc(25% - 20px); /* Öğelerin maksimum genişliğini ayarlayın */  
+}  
+
+.magaza .right-visuals{
+    flex:10;
+    justify-content: center;
+}
+.magaza .right-visuals .visual1{
+    width: 25%;
+    cursor: pointer;
+}
+.visual1 img{
+    width: 200px;
+    height: 200px;
+}
+.magaza .right-visuals .price-container, .magaza .right-visuals .addPlace,
+.magaza .right-visuals .urun-name,.magaza .right-visuals .add-basket{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 5px;
+}
+.magaza .right-visuals .urun-name{
+    height: 40px;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 18px;
+}
+.magaza .right-visuals .price-container{
+    align-items: center;
+    height: 40px;
+    margin-top: -10px;
+}
+.magaza .right-visuals .urun-1-price{
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 17px;
+    margin-top: 7px;
+}
+#urun-price-sign {  
+    width: 11px;
+    height: 30px;
+    margin-top: -4px;
+}  
+.magaza .right-visuals .addPlace{
+    height: 30px;
+    border: .5px solid #979090;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+}
+.magaza .right-visuals .quantity-group{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.magaza .right-visuals .addPlace .minus-magaza,
+.magaza .right-visuals .addPlace .quantity-magaza,
+.magaza .right-visuals .addPlace .plus-magaza{
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 20px;
+}
+.magaza .right-visuals .addPlace .kg-magaza{
+    margin-left: 10px;
+}
+.magaza .right-visuals .add-basket{
+    background-color: blue;
+    height: 40px;
+    border: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.magaza .right-visuals .basketText{
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 17px;
+}
+
+.relative-magaza {  
+    position: relative; /* Konumlandırma için relative ayarı */  
+}  
+
+.absolute-magaza {  
+    position: absolute; /* Sayının konumlandırılması için absolute ayarı */  
+}  
+
+.top-0-magaza {  
+    top: 12px;
+}  
+
+.right-0-magaza {  
+    right: 16px;
+}
+
+@media (max-width: 900px) {
+    .magaza{
+        margin-top: 40px;
+    }
+    .magaza .magaza-place{
+        width: 88%;
+    }
+    .magaza .left-menu h1{
+        font-size: 11px;
+        padding-bottom: 5px;
+        margin-right: 20px;
+    }
+    
+    .magaza .left-menu-elements{
+        width: 100%;
+        height: 100px;
+    }
+    .magaza .left-menu-elements h3{
+        font-size: 10px;
+    }
+    .magaza .left-menu-elements h3:first-child{
+        font-size: 10px;
+    }
+    .magaza .left-menu-elements h3:last-child{
+        padding-bottom: 10px;
+        margin-right: 20px;
+    }
+
+
+    .magaza .right-visuals .visual-group {  
+        gap: 8px;
+    }  
+    .magaza .right-visuals .visual1{  
+        flex: 1 1 calc(25% - 8px); /* Tek bir satırı %25 genişlikte kaplayacak */  
+        max-width: calc(25% - 8px); /* Öğelerin maksimum genişliğini ayarlayın */  
+    }
+    .visual1 img{
+        width: 75px;
+        height: 75px;
+    }
+    .magaza .right-visuals .price-container, .magaza .right-visuals .addPlace,
+    .magaza .right-visuals .urun-name,.magaza .right-visuals .add-basket{
+        width: 95%;
+        margin-top: 5px;
+    }
+    .magaza .right-visuals .urun-name{
+        height: 15px;
+        font-size: 11px;
+    }
+    .magaza .right-visuals .price-container{
+        height: 15px;
+        margin-top: -5px;
+    }
+    .magaza .right-visuals .urun-1-price{
+        font-size: 10px;
+        margin-top: 4px;
+    }
+    #urun-price-sign {  
+        width: 8px;
+        height: 19px;
+        margin-top: -4px;
+    }  
+    .magaza .right-visuals .addPlace{
+        height: 13px;
+    }
+    .magaza .right-visuals .addPlace .minus-magaza,
+    .magaza .right-visuals .addPlace .quantity-magaza,
+    .magaza .right-visuals .addPlace .plus-magaza{
+        font-size: 11px;
+    }
+    .magaza .right-visuals .addPlace .kg-magaza{
+        margin-left: 4px;
+        font-size: 9px;
+    }
+    .magaza .right-visuals .add-basket{
+        height: 20px;
+    }
+    .magaza .right-visuals .basketText{
+        font-size: 8px;
+    }
+}
